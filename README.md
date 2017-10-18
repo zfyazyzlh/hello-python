@@ -8,3 +8,4 @@
 本人小白 从头开始
 hello world
 
+ git push -u origin master
