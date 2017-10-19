@@ -1,0 +1,6 @@
+git add -A     //添加修改的文件
+git commit -m "更改内容"
+git push     //master origin
+
+详细参见
+http://blog.jobbole.com/88955/
