@@ -50,19 +50,28 @@ outtime=str(datetime.timedelta(seconds=intime))
 # 时间转换为输出 参考https://stackoverflow.com/questions/775049/python-time-seconds-to-hms
 #结果为19:26:40
 #输出格式为http://www.jb51.net/article/62518.htm 但是不成功
-print '{:}'.format(outtime)
 
+这里使用time 模块 不用上面的datetime模块
+import time
+intime=int(raw_input('输入秒数(s) :'))
+print time.strftime("%H %M %S", time.gmtime(intime))
+
+运行结束 跟题目完全一致
+over
 
 你可以在此直接在线输入程序代码。
 3编写程序，完成下列题目（2分）
 题目内容：
-对于三角形，三边长分别为a, b, c，给定a和b之间的夹角C，则有：。编写程序，使得输入三角形的边a, b, c，可求得夹角C(角度值)。
+对于三角形，三边长分别为a, b, c，给定a和b之间的夹角C，则有：c²=a²+b²-2*a*b*cos(C)。编写程序，使得输入三角形的边a, b, c，可求得夹角C(角度值)。
 
 输入格式:
 三条边a、b、c的长度值，每个值占一行。
 
 输出格式：
 夹角C的值，保留1位小数。
+c²=a²+b²-2*a*b*cos(C)
+(a²+b²-c²)/(2*a*b)=cos(C)
+
 
 输入样例：
 3
@@ -73,3 +82,13 @@ print '{:}'.format(outtime)
 90.0
 
 时间限制：500ms内存限制：32000kb
+import  math
+
+a=int(raw_input('输入a :'))
+b=int(raw_input('输入b :'))
+c=int(raw_input('输入c :'))
+cosc=(a**2+b**2-c**2)/(2*a*b)
+#题目中cosC=1
+#求出弧长转化为角度orz
+#http://www.jb51.net/article/66175.htm
+print float(math.acos(cosc)/math.pi)*180
