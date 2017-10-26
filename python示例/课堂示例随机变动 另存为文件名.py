@@ -5,11 +5,13 @@ Created on Fri Oct 20 23:14:04 2017
 @author: xss
 """
 import  math
-#print dir(math)
-#print help (math.cosh)
-#print help math
-a=3 #int(raw_input('输入a :'))
-b=4 #int(raw_input('输入b :'))
-c=5 #int(raw_input('输入c :'))
-cosc=(a**2+b**2-c**2)/(2*a*b)
-print float(math.acos(cosc)/math.pi)*180
+
+a=10 #int(raw_input('输入a :'))
+b=40 #int(raw_input('输入b :'))
+c=15 #int(raw_input('输入c :'))
+deerta=b**2-4*a*c
+
+x1=(-b+math.sqrt(deerta))/(a*2)
+x2=(-b-math.sqrt(deerta))/(a*2)     
+
+print '{:.2f}'.format(x2) ,'{:.2f}'.format(x1)

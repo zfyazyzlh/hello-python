@@ -44,5 +44,24 @@ import datetime
 
 print datetime.date.today()
 #+--------
-对于一元二次方程，ax²+bx+c=0 若有a-10 b=40 c=15 ，则其解是什么？若有多个解，则按照从小到大的顺序在一行中输出，中间使用空格分隔。解保留2位小数（四舍五入）。
+对于一元二次方程，ax²+bx+c=0 若有a=10 b=40 c=15 ，
+则其解是什么？
+若有多个解，则按照从小到大的顺序在一行中输出，
+中间使用空格分隔。解保留2位小数（四舍五入）。
+
+#
 #sqrt(x) 开平方
+#Δ>0 有两个解
+#Δ=0 有一个解
+#Δ<0 无解
+import  math
+
+a=10 #int(raw_input('输入a :'))
+b=40 #int(raw_input('输入b :'))
+c=15 #int(raw_input('输入c :'))
+deerta=b**2-4*a*c
+
+x1=(-b+math.sqrt(deerta))/(a*2)
+x2=(-b-math.sqrt(deerta))/(a*2)
+
+print '{:.2f}'.format(x2) ,'{:.2f}'.format(x1)
