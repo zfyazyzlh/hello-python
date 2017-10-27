@@ -41,6 +41,9 @@ elif score>=60:
 else:
     print 'E'
 
+if-elif-else 语句中有else条件时候 else 条件放到最后 否则出错
+
+
 例题
  求解二元一次方程
  示例文件夹 下
