@@ -17,8 +17,9 @@ if a !=0:
         x1=(-b+root)/(a*2)
         x2=(-b-root)/(a*2)
         print '{:.2f}'.format(x2) ,'{:.2f}'.format(x1)
-    elif root=0:
+    elif root==0:
         x=(-b+root)/(a*2)
         print '{:.2f}'.format(x)
     else:
         print 'no solution'
+        
