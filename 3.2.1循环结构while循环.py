@@ -146,3 +146,33 @@ while num > 0:
     count += 1#计数作用
 
 print count
+
+
+
+
+-------------------------------
+import  math
+
+while True:
+    a=float(raw_input('输入a :'))
+    b=float(raw_input('输入b :'))
+    c=float(raw_input('输入c :'))
+
+    if a ==0:
+        print 'the equation is linear,not quadratic'
+    else:
+        delta= b**2 - 4 * a * c
+        if delta < 0:
+            print 'No solution'
+        elif delta == 0:
+            s=-b/(2*a)
+            print 's:',s
+        else:
+            root=math.sqrt(b**2-4*a*c)
+            s1=(-b+root)/(a*2)
+            s2=(-b-root)/(a*2)
+            print 'Two dis tionct solutions are:''{:.2f}'.format(s2) ,'{:.2f}'.format(s1)
+    ch = raw_input('please input \'q\' to end or any keys to conitnue\n')
+    if ch == 'q' :
+        break
+        
