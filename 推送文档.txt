@@ -1,6 +1,6 @@
-git add -A     //Ìí¼ÓĞŞ¸ÄµÄÎÄ¼ş
-git commit -m "¸ü¸ÄÄÚÈİ"
+ï»¿git add -A     //æ·»åŠ ä¿®æ”¹çš„æ–‡ä»¶
+git commit -m "æ›´æ”¹å†…å®¹"
 git push     //master origin
 
-ÏêÏ¸²Î¼û
+è¯¦ç»†å‚è§
 http://blog.jobbole.com/88955/

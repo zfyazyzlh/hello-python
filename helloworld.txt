@@ -1,10 +1,10 @@
-´ËÏîÄ¿ÎªÍøÒ×¿ÎÌÃ 
+ï»¿æ­¤é¡¹ç›®ä¸ºç½‘æ˜“è¯¾å ‚ 
 
-³ÌÐòÉè¼ÆÈëÃÅ¡ªPython
---³µÍòÏè
-µØÖ·£ºhttp://mooc.study.163.com/learn/HIT-1000002017?tid=2001354013#/learn/announce
+ç¨‹åºè®¾è®¡å…¥é—¨â€”Python
+--è½¦ä¸‡ç¿”
+åœ°å€ï¼šhttp://mooc.study.163.com/learn/HIT-1000002017?tid=2001354013#/learn/announce
 
-´ó¼ÒÓÐÐËÈ¤µÄ¿ÉÒÔÈ¥¿´ÏÂ
-±¾ÈËÐ¡°× ´ÓÍ·¿ªÊ¼
+å¤§å®¶æœ‰å…´è¶£çš„å¯ä»¥åŽ»çœ‹ä¸‹
+æœ¬äººå°ç™½ ä»Žå¤´å¼€å§‹
 hello world
 
