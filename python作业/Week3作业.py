@@ -101,12 +101,49 @@ n以内循环素数的数目。
 13
 时间限制：2000ms内存限制：32000kb
 import math
-n = int(raw_input('输入一个正整数n:'))
-x = 0
 
-for i in range(2,n):
+n = int(raw_input('输入一个正整数n:'))
+number = 0
+
+
+for i in range(2,n+1):
+
     for j in range(2,int(math.sqrt(i)+1)):
-        if (x % j == 0):
+
+        if (i % j == 0 ):
             break
-    star = i
-    
+    else:
+        #print i 这里的i 就是素数
+
+
+        if  i%10 != i: #两位数以上的进行后续判断
+            i_star = 0
+            i_change = i
+            x = -1
+            i_cont = i
+            #上面两个计数器 主要是构造 两位数以上的素数数位循环移位
+            while i_cont > 1 :
+                i_cont /= 10.0
+                x += 1
+            isushu = 0
+            while i_star != i :
+                i_star = int( i_change/10) + i_change%10 * (10**x)
+                i_change = i_star
+                #循环位移
+
+                for o in range(2,int(math.sqrt(i_star)+1)):#这里range条件不要丢不然容易出问题
+
+                    if(i_star % o ==0):
+                        isushu = 9 #如果有合数 则变为9 为以后计数增加判定条件
+                        break
+            else:
+                if isushu < 1 :
+                    number += 1
+
+
+        else:
+            number += 1
+
+
+
+print number
