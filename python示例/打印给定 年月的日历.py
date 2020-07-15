@@ -1,3 +1,9 @@
+#!python2
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+This is a temporary script file.
+"""
 def is_leap_year(year):
     """
     判断是否闰年
@@ -43,10 +49,10 @@ def get_total_num_of_days(year, month):
 def get_start_day(year, month):
     return (3 + get_total_num_of_days(year,month)) %7
 
-print get_start_day(2018,1)
+print  get_start_day(2018,1)
 
 
-
+'''
 -----------------------------------------------------
 下列程序的输出结果是：
 
@@ -85,3 +91,4 @@ print x, y
 2 1
 
 1 2
+'''
